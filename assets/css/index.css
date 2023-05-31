@@ -70,6 +70,7 @@ header {
   border-radius: 12px;
   position: relative;
   overflow: hidden;
+  position: relative;
 }
 .banner-inner::before {
   content: "";
@@ -102,24 +103,17 @@ header {
 }
 .banner__turquoise--blue {
   position: absolute;
-  width: 271.85px;
-  height: 301.21px;
   left: -79px;
   top: 97px;
   z-index: 0;
-  background: #60d7e2;
-  transform: matrix(0.79, -0.61, 0.6, 0.8, 0, 0);
 }
 
 .banner__turquoise--sulu {
   position: absolute;
-  width: 550.61px;
-  height: 610.07px;
-  left: 800px;
+  /* top: 100%; */
   top: 20px;
   /* top: 308.72px; */
-  background: #c5f663;
-  transform: matrix(0.79, -0.61, 0.6, 0.8, 0, 0);
+  right: 0;
   z-index: 0;
 }
 .banner__avt {
@@ -287,9 +281,11 @@ header {
 .swiper-slide.swiper-slide-next,
 .swiper-slide.swiper-slide-prev {
   width: 24% !important;
+  transition: all 0.5s ease;
 }
 .swiper-slide.swiper-slide-active {
   width: 49% !important;
+  transition: all 0.5s ease;
 }
 
 .swipper-slide__block {
@@ -458,6 +454,10 @@ header {
   .banner__download--right {
     display: none;
   }
+  .banner__turquoise--sulu {
+    width: 400px;
+    height: 460px;
+  }
   /* slider */
   .swipper-slide__block {
     padding: 15px 5px 30px 5px;
@@ -523,6 +523,15 @@ header {
   }
   .banner__download--app {
     padding: 10px 15px;
+  }
+  .banner__turquoise--blue {
+    width: 180px;
+    height: 210px;
+  }
+
+  .banner__turquoise--sulu {
+    width: 300px;
+    height: 360px;
   }
   /* slider */
   .swiper-slide.swiper-slide-next,
@@ -687,6 +696,16 @@ header {
   .banner__text--desc {
     font-size: 16px;
     line-height: 16px;
+  }
+  .banner__turquoise--blue {
+    top: 20px;
+    width: 120px;
+    height: 150px;
+  }
+
+  .banner__turquoise--sulu {
+    width: 150px;
+    height: 180px;
   }
 
   /* slider */
