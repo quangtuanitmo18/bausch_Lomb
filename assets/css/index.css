@@ -118,7 +118,11 @@ header {
 }
 .banner__avt {
   z-index: 1;
+  /* transition: all 0.2s ease; */
 }
+/* .banner__avt:hover {
+  transform: translateX(10px);
+} */
 .banner__avt--1 {
   position: absolute;
   top: 45px;
